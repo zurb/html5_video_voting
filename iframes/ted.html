@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Poptastic</title>
+  <link href="../stylesheets/app.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="../javascripts/jquery.js" type="text/javascript"></script>
+<script src="../javascripts/jquery-ui.js" type="text/javascript"></script>
+<script src="../javascripts/raphaeljs/raphael.js" type="text/javascript"></script>
+<script src="../javascripts/raphaeljs/g.raphael.js" type="text/javascript"></script>
+<script src="../javascripts/raphaeljs/bar.raphael.js" type="text/javascript"></script>
+<script src="../javascripts/application.js" type="text/javascript"></script>
+<style>
+	body {margin: 0;padding: 0;overflow: hidden;}
+</style>
+</head>
+<body>
+<div id="poptastic">
+	<video id="2" class="video" data-ip="f528764d624db129b32c21fbca0cb8d6" data-keycode="32" data-bars="85" width="600" height="340">
+			<source src="http://videofeedback.zurb.s3.amazonaws.com/houses.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+			<source src="http://videofeedback.zurb.s3.amazonaws.com/houses.theora.ogv" type='video/ogg; codecs="theora, vorbis"'>
+			<source src="http://videofeedback.zurb.s3.amazonaws.com/houses.webm" type='video/webm; codecs="vp8, vorbis"'>
+		</video>
+	<div id="controls">
+		<a href="#pause" id="play">Play</a>
+		<div id="bar-wrapper-container">
+		<div id="bar-wrapper">
+			<div id="bar"></div>
+			<div id="buffer"></div>
+			<a href="#" id="paddle" class="ui-draggable"></a>
+		</div>
+		</div>
+		<a href="#vol" id="volume"><span></span></a>
+	</div>
+	<div id="chart"></div>
+</div>
+<div id="error">You just voted!</div>
+</body>
+</html>

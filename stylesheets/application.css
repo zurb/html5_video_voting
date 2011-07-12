@@ -1,0 +1,66 @@
+	
+/*	--------------------------------------------------
+	Structure
+	-------------------------------------------------- */
+	
+	/* For IE */
+	body.ie div.five ul.photos { width: 290px; }
+	body.ie div.twelve ul.photos { width: 720px; }
+	
+	/* Wrapper ------------------------------------- */
+	#wrapper { border-top-color: #b8d30b; }
+	body#teamPage div#wrapper { border-color: #2daebf; }
+	body#contactPage div#wrapper { border-color: #ff5c00; }
+
+
+/*	--------------------------------------------------
+	Footer
+	-------------------------------------------------- */
+	
+	div#siteInfo { background: #f5f5f5 url(http://www.zurb.com/images/footer/footer-shadow.gif) no-repeat top center; margin: 27px 0 0; padding: 27px 0 18px; clear: both; position: relative; }
+	div#siteInfo div.column-row { position: relative; margin-bottom: 0; /* height: 126px; */ }
+
+	div#siteInfo h5 { padding-top: 1px; margin-bottom: 9px; }
+	div#siteInfo p { color: #777; }
+	div#siteInfo p strong { color: #333; }
+	
+	/* Bottom half of the footer */
+	div#siteInfo div#footer { width: 940px; padding: 18px 0 9px; margin: 9px 0 0; border-top: 1px solid #ddd; }
+	div#siteInfo div#footer p.copyright { margin: 0; }
+
+	/* Change our links around */
+	div#siteInfo a { font-weight: inherit; color: #777; text-decoration: underline; }
+/* 	div#siteInfo ul a { text-decoration: none; } */
+	div#siteInfo a:hover { color: #555; }
+	
+	/* Tweak the form styles for width and inline-ness */
+	div#siteInfo form { width: 100%; height: 27px; margin: -5px 0 5px; position: relative; }
+	div#siteInfo form input.input-text, div#siteInfo form button { float: left; margin: 0; }
+	div#siteInfo form input.input-text { width: 200px; }
+	div#siteInfo form button { float: left; margin-left: 5px; }
+	div#siteInfo form button.white { -webkit-box-shadow: 0 1px 1px rgba(255,255,255,.5); -moz-box-shadow: 0 1px 1px rgba(255,255,255,.5); }
+	div#siteInfo form button span { padding: 4px 10px 6px; font-weight: bold; }
+	div#siteInfo form button {background-image:url(http://www.zurb.com/images/footer/zurbnews-button.gif); width:58px; margin-left: -10px;}
+	div#siteInfo form button {background-position:0 0;background-repeat:no-repeat;cursor:pointer;height:27px;position:absolute;right:0;text-indent:-999em;top:0;}
+	div#siteInfo form button:hover {background-position:0 -27px;}
+	
+	div#siteInfo div#zurbword form span.cookie { width: 24px; height: 21px; background: url(http://www.zurb.com/images/footer/cookie.gif) no-repeat 0 0; position: absolute; top: 5px; left: 5px; }
+	div#siteInfo div#zurbword form input.input-text { padding-left: 27px; width: 180px; }
+	div#siteInfo div#zurbword form input.input-text:focus { padding-left: 26px; }
+
+	body.ie7 div#siteInfo form input.input-text { padding: 6px 5px 3px; line-height: 1; }
+
+	div#siteInfo #footer ul { float: right; height: 27px; margin: -2px -12px 0 0; }
+	div#siteInfo #footer ul li { display: inline; }
+	div#siteInfo #footer ul li a { float: left; width: auto; margin: 0; padding: 2px 12px 2px; border-right: 1px solid #ddd; }
+	div#siteInfo #footer ul li.rss a { padding-left: 32px; background: url(http://www.zurb.com/images/icons/16px/rss.png) no-repeat 11px 3px; border: 0; }
+
+/*	Charlie Murphy Footer -------------------- */
+	div#siteInfo.dark #footer { border-color: #333; }
+	div#siteInfo.dark #footer ul li a { border-color: #333; }
+
+	div#siteInfo.dark { background-image: url(http://www.zurb.com/images/footer/footer-shadow-dark.gif); background-color: #2c2c2c; }
+	div#siteInfo.dark form input.input-text { -moz-box-shadow: none; -webkit-box-shadow: none; border-color: #000; }
+	div#siteInfo.dark h3, div#siteInfo.dark h4, div#siteInfo.dark h5 { color: #fff !important; text-shadow: none; }
+	div#siteInfo.dark p { color: #999 !important; text-shadow: none; }
+	div#siteInfo.dark a:hover { text-decoration: underline; color: #ccc; }

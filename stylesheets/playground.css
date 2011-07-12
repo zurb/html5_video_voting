@@ -1,0 +1,58 @@
+
+ul.nav li#ZURBmenu a {  }
+ul.nav li#ZURBmenu a img { display: none !important; }
+ul.nav li#ZURBmenu strong { background: transparent url(http://www.zurb.com/playground/zurb-nub.png); }
+ul.nav li#ZURBmenu a:hover strong { background-color: none; }
+ul.nav li#ZURBmenu a:hover strong img { display: block; }
+
+div#header img {  }
+div#header h4 { margin: 0; }
+div#header h4 a { float: left; margin: 20px 0 0 15px; padding: 5px 0 1px 14px; color: #777; font-weight: normal; border-left: 1px solid #ddd; }
+a.follow-us { background: url(http://www.zurb.com/images/icons/24px/twitter-inset.png) no-repeat 0 center; display: block; float: right; margin: 25px 0 0; padding-left: 30px; line-height: 24px; color: #333; font-size: 14px; }
+a.follow-us:hover { color: #555; }
+a#followUs { float: right; margin-top: 20px; }
+a#getAJob { float: right; margin-top: 20px; margin-right: 20px; }
+a#followUs span { background: url(http://www.zurb.com/images/icons/16px/twitter-inset.png) no-repeat 10px 3px; padding-left: 30px; }
+
+div.page-header h2 { letter-spacing: 0; }
+
+div.page-header.playground{-moz-background-clip:border; -moz-background-origin:padding; -moz-background-size:auto auto; background-attachment:scroll; background-color:transparent; background-image:url("http://www.zurb.com/images/playground/robot.jpg"); background-position:99% 40%; background-repeat:no-repeat; height: auto; margin-top:0px; }
+
+/* Quick fix for the playground footer */
+div#siteInfo div#aboutPlayground h4 { margin-bottom: 9px; }
+
+div.awesome.box { background: #efefef; margin: 0 0 18px 0; padding: 12px 0; -webkit-border-radius: 6px; -moz-border-radius: 6px; border: 1px solid #ddd; border-top-color: #ccc; width:200px; }
+div.awesome.box div.divider { height: 0; margin: 0 14px 5px 14px; background-color: #ccc; width: 172px; border-bottom: 1px solid #ddd; }
+
+div.awesome.box h4 a { display: block; color: #333; padding: 3px 0 5px 0; width: 100%; font-size: 16px;  }
+
+div.awesome.box li { margin-bottom: 5px; color: #333; text-decoration: none; }
+div.awesome.box li a { display: block; width: 100%; color: #333; }
+div.awesome.box a:hover { background: #007d9a; color: white; }
+div.awesome.box a span { display: block; margin: 0 14px; }
+
+div.awesome.box form input[type="text"] { margin: 0 10px; width: 150px; }
+
+div.currentdemo { color: #888; margin-top: -17px; margin-bottom: 15px; }
+
+div.currentdemo h2 {margin-top: -14px;}
+
+ul.photos.playground.slide li { float:left; height:100px; margin-bottom:0px; margin-left: 20px; margin-right:0; margin-top:0px; position:relative; width:300px;}
+ul.photos.playground.slide li p { margin-left: 160px; margin-top: -90px; }
+ul.photos.playground.slide li strong { display: block; }
+
+
+div.currentdemo.right { color: #888; margin-bottom: 0; float: left;  }
+
+div.currentdemo.right h2 {margin-top: }
+
+div.selectorleft {margin-left: -25px; top: 125px; position: absolute; z-index: 2}
+
+div.selectorright {margin-left: 567px; top: 125px; position: absolute; z-index: 2}
+
+div.indicator { position: absolute; margin-left: 545px; margin-top: 0px;}
+
+div.indicator ul li {display: inline;}
+
+p.slideinfo {width: 450px; margin-top: 5px; font-size: 15px;}
+

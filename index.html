@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>HTML5 Video Voting - ZURB Playground - ZURB.com</title>
+				
+		<meta name="description" content="Vote on your favorite videos with HTML5 video voting.">
+		<meta name="keywords" content="HTML5 video, video voting, voting, HTML5, jQuery, plugin, ruby on rails, raphael.js , thought, idea, resources, concept, words, definition, zurbword, wiki, information, zurb, design strategy, inteaction design, UI">		
+		<meta name="author" content=" ZURB, inc.">
+		<meta name="copyright" content="ZURB, inc. Copyright (c) 2011">
+		<link href="stylesheets/global.css" media="all" rel="stylesheet" type="text/css">
+		<link href="stylesheets/application.css" media="all" rel="stylesheet" type="text/css">
+		<link href="stylesheets/playground.css" media="all" rel="stylesheet" type="text/css">
+		<link rel="icon" href="http://www.zurb.com/favicon.ico" type="image/x-icon">
+		<style>
+		#videoFeedbackPage{background:#1b0528 url(images/video-feedback/images/bg-repeat.jpg) top left repeat-x !important;}
+		#header2 img{display:block;float:left;margin:25px 0 0;}
+		#header2 h4 a{float:left;margin:20px 0 0 15px;padding:5px 0 1px 14px;font-weight:normal;border-left:1px solid rgba(255,255,255,.2) !important;color:#b7a5c2 !important;}
+		#video-page{color:#eee;font-size:14px;padding-bottom:15px;}
+		#video-page .column-row{padding-bottom:50px;}
+		#video-page h3{color:#eee;font-size:22px;text-shadow:#111 2px 2px 1px;}
+		#video-page p{line-height:1.5;}
+		#video-page p span{background:#601f87;padding:3px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+		#video-page a{font-weight:bold;text-decoration:none;color:#822bb6;}
+		#video-page a:hover{color:#a535e8;}
+		#header .super.white.button{opacity:0.4 !important;}
+		#wrapper{border:none !important;background:transparent url(images/video-feedback/images/bg.jpg) top center no-repeat;}
+		#videohead{padding-top:80px;padding-bottom:70px;}
+		#videohead p.lead{position:relative;top:110px;font-size:22px;font-weight:300;text-shadow:#111 0px 4px 0px;color:#eee;text-align:center;}
+		#ted{display:none;margin:0 auto;margin-top:150px;border:10px solid rgba(255,255,255,.2);}
+		#earworm{margin:0 auto;margin-top:150px;border:10px solid rgba(255,255,255,.2);}
+		#pta{display:none;margin:0 auto;margin-top:150px;border:10px solid rgba(255,255,255,.2);}
+		#links{margin:0 auto;padding-top:20px;text-align:center;margin-bottom:60px;}
+		#links .current{color:#eee;border-bottom:1px solid #eee;}
+		#links a:hover{border-bottom:none;}
+		#how{text-align:center;}
+		#followUs,#getAJob{opacity:0.5 !important;}
+		#followUs,#getAJob{opacity:0.8 !important;}
+		.twitter-share-button{display:block;float:right;margin-top:23px;padding-right:20px;opacity:0.5;}
+		.twitter-share-button:hover{opacity:0.8;}
+		pre{white-space:pre-wrap;white-space:-moz-pre-wrap !important;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;}
+		</style>
+	</head>
+	
+	<body id="videoFeedbackPage" class="chrome apple">
+		<div id="wrapper">
+			<div id="container">
+				
+				<div id="content">
+<div id="header2">
+	<a class="super white button" id="followUs" href="http://www.twitter.com/zurb" name="followUs"><span>Follow us on Twitter</span></a> 
+	<a class="super white button" id="getAJob" href="http://www.zurb.com/talent" name="getAJob"><span>Join Our Team</span></a>  
+	<a href="http://www.zurb.com/" title="ZURB.com"><img alt="ZURB" src="http://www.zurb.com/playground/video-feedback/images/logo.png"></a>
+	<h4><a href="http://www.zurb.com/playground">Playground</a></h4>
+</div>
+<div id="video-page">
+	<div id="videohead">
+		<p class="lead">Watch these fascinating videos and vote for your favorite parts<br> using the space bar.</p>
+		<div id="ted" class="viewer" style="width: 600px; height: 380px; display: none; "><iframe frameborder="0" id="tedWindow" scrolling="no" style="width: 600px; height: 380px; z-index: 5; " src="iframes/ted.html"></iframe></div>
+		<div id="earworm" class="viewer" style="width: 640px; height: 400px; display: block; border-top-color: rgba(255, 255, 255, 0.296875); border-right-color: rgba(255, 255, 255, 0.296875); border-bottom-color: rgba(255, 255, 255, 0.296875); border-left-color: rgba(255, 255, 255, 0.296875); "><iframe frameborder="0" id="earwormWindow" scrolling="no" style="width: 640px; height: 400px; z-index: 5; " src="iframes/earworm.html"></iframe></div>
+		<div id="pta" class="viewer" style="width: 496px; height: 328px; border-top-color: rgba(255, 255, 255, 0.296875); border-right-color: rgba(255, 255, 255, 0.296875); border-bottom-color: rgba(255, 255, 255, 0.296875); border-left-color: rgba(255, 255, 255, 0.296875); display: none; "><iframe frameborder="0" id="ptaWindow" scrolling="no" style="width: 640px; height: 400px; z-index: 5; " src="iframes/pta.html"></iframe></div>
+		<div id="links">
+			<a href="#earworn" class="earworm current">DJ Earworm Mashup 2011</a> |
+			<a href="#growyourhouse" class="ted">Grow Your House</a> |
+			<a href="#planestrainsandautomobiles" class="pta">Jugball Training Camp</a>
+		</div>
+		<div id="how">
+			<img src="images/video-feedback/images/how.gif">
+		</div>
+	</div>
+	<div class="column-row">
+		<div class="eight columns">
+			<h3>Voting &amp; Points of Interest</h3>
+			<p>Inspired by our user feedback tool, <a href="http://www.verifyapp.com" title="Verify">Verify</a>, we decided to develop a tool to allow you to gather feedback on your videos. Voting is exquisitely simple. All you do is click on the video and use the <span>spacebar</span> to submit your vote, it will automatically populate the bar graph above.</p>
+			<p>The video must be playing and have not ended for your vote to be accepted. You will know when you have successfully voted when the token <img src="images/video-feedback/images/marker.png"> is placed in the timeline.</p>
+			<p>When you vote, it is added to that section of the videos timeline. This allows a viewer to quickly assess the most intriguing segments of the video and quickly jump to those sections by clicking on the bar graph.</p>
+		</div>
+		<div class="eight columns">
+			<img src="images/video-feedback/images/html5-demo.jpg" style="width: 440px;height:292px">
+		</div>
+	</div>
+	<div class="column-row">
+		<div class="eight columns">
+			<br><br>
+			<div class="highlight" style="-webkit-border-radius: 3px;-moz-border-radius: 3px; border-radius: 3px;"><pre style="-moz-border-radius: 5px; border-radius: 5px; -webkit-border-radius: 5px; margin: 0; display: block; font: 11px Monaco, monospace !important; padding: 15px; background-color: #111; overflow: auto; color: #D0D0D0;; line-height: 125%"><span style="color: #6ab825; font-weight: normal">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">"javascripts/embed.js"</span><span style="color: #6ab825; font-weight: normal">&gt;&lt;/script&gt;</span>
+<span style="color: #6ab825; font-weight: normal">&lt;script&gt;</span>
+	<span style="color: #d0d0d0">$(</span><span style="color: #ed9d13">'#ted'</span><span style="color: #d0d0d0">).poptastic({</span>
+		<span style="color: #ed9d13">'video_id'</span> <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">12</span><span style="color: #d0d0d0">,</span>
+		<span style="color: #ed9d13">'autoplay'</span> <span style="color: #d0d0d0">:</span> <span style="color: #6ab825; font-weight: normal">true</span><span style="color: #d0d0d0">,</span>
+		<span style="color: #ed9d13">'width'</span>    <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">600</span><span style="color: #d0d0d0">,</span>
+		<span style="color: #ed9d13">'height'</span>   <span style="color: #d0d0d0">:</span> <span style="color: #3677a9">340</span>
+	<span style="color: #d0d0d0">});</span>
+<span style="color: #6ab825; font-weight: normal">&lt;/script&gt;</span></pre></div>
+			</div>
+		<div class="eight columns">
+			<h3>Behind the Scenes</h3>
+			<p>HTML5 Video Voting relies on <a href="http://jquery.com" title="jQuery" rel="nofollow">jQuery</a>, and <a href="http://raphaeljs.com/" title="Raphael.js" rel="nofollow">Raphael.js</a> to make the magic happen. We've developed a small jQuery plugin for quickly embedding the "viewer" into any page.</p>
+			<p>We are using the <a href="https://developer.mozilla.org/en/DOM/window.postMessage" title="PostMessage">postmessage</a> method for safely communicating with the video that is embedded in a cross-domain iframe.</p>
+			<p>The player is tested in FireFox 4+, Chrome 10+, and Safari 4+ but may very well work in others.</p>
+		</div>
+	</div>
+</div>
+
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/embed.js"></script>
+<script>
+	$('#ted').poptastic({
+		'video_id' : 2,
+		'autoplay' : false,
+		'width'    : 600,
+		'height'   : 340
+	});
+	$('#earworm').poptastic({
+		'video_id' : 1,
+		'autoplay' : false,
+		'width'    : 640,
+		'height'   : 360
+	});
+	$('#pta').poptastic({
+		'video_id' : 3,
+		'autoplay' : false,
+		'width'    : 640,
+		'height'   : 360
+	});
+	$('#links a').click(function (e) {
+		e.preventDefault;
+		$('.viewer').hide();
+		var selected = $(this).attr('class');
+		$('#links a').removeClass('current');
+		$('#' + selected).show();
+		$(this).addClass('current');
+	});
+</script>
+				</div>
+			</div>
+		</div>
+			
+		<div id="siteInfo" style="display:none">
+			<div class="container">
+				<div class="column-row">
+					<div class="six columns" id="aboutPlayground">
+						<h4>Creative Experiments from <strong>ZURB.</strong></h4>
+						<p>Welcome to the <a href="http://www.zurb.com/playground">ZURB Playground</a>, creative interaction design tools and experiments by the design and engineering teams here at ZURB. We create tools, implementation examples, and other interesting projects that help people design for people.</p>
+					</div>
+			
+					<div class="five columns" id="zurbword">
+						<h5>More From the Playground</h5>
+						<ul>
+							<li><a href="http://www.zurb.com/playground">Playground Home</a></li>
+							<li><a href="http://www.smashingmagazine.com/author/dmitry-dragilev/" rel="nofollow">Our Articles on Smashing Magazine</a></li>
+							<li><a href="http://www.zurb.com/blog/topic/implementation">Implementation Articles on the ZURBlog</a></li>
+						</ul>
+					</div>
+			
+					<div class="five columns" id="zurbnews">
+							<h5>Subscribe to ZURBnews</h5>
+	<form action="http://www.zurb.com/newsletter/sign_up" id="newsSubscribe" method="post">
+		<div class="wrapper">
+			<input class="input-text" id="groupie_email" name="groupie[email]" size="21" type="text" value="Enter your e-mail...">
+			<button class="playground" type="submit">Get It</button>
+		</div>
+		
+	</form>
+	<p>Get our monthly newsletter, ZURBnews.<br> Check out the <a href="http://www.zurb.com/news" title="Read last month's edition of ZURBnews">latest news and buzz »</a></p>
+					</div>
+				</div>
+			
+				<div id="footer">
+	<ul>
+		<li><a href="http://www.zurb.com/" class="home" title="ZURB.com">Home</a></li>
+		<li><a href="http://www.zurb.com/talent" class="talent" title="Talent">Talent</a></li>
+		<li><a href="http://www.zurb.com/work" class="work" title="Our Work">Work</a></li>
+		<li><a href="http://www.zurb.com/blog" class="blog" title="The ZURBlog">Blog</a></li>
+		<li><a href="http://www.zurb.com/playground" class="playground" title="The Playground">Playground</a></li>
+		<li><a href="http://www.zurb.com/contact" class="contact" title="Contact Us">Contact</a></li>
+		<li class="rss"><a href="http://feeds.feedburner.com/zurb/blog" title="Follow our blog via RSS">Subscribe to Our Blog</a></li>
+	</ul>
+
+	<p class="copyright">© 1998 - 2011 ZURB. All rights reserved.</p>
+</div>
+
+			</div>
+		</div></body></html>
