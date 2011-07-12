@@ -1,0 +1,11 @@
+h1. HTML5 Video Voting
+
+<< Project description >>
+
+h2. What is this HTML5 Video Voting you speak of?
+
+This is an experiment with HTML5 Video that allows you to vote on your favorite segments of the video and view trends in a real-time bar graph. The source code is setup to accept any key event as a vote, you just have to define it in your jQuery embed code. The default vote submission key is the space bar.
+
+h3. Back-end required
+
+You will need a backend to receive and process your votes. Votes must be returned as a tally of all the votes for each column you want to display. In our expriment on http://www.zurb.com/playground/html5-video-voting we are using Ruby on Rails to process the votes into the designated number of columns.
